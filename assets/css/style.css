@@ -330,11 +330,13 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 60vh;
+  /* height: 60vh; */
+  min-height: 630px;
   background: url("../img/bg.jpg") center center;
   background-size: cover;
   position: relative;
-  margin-top: 70px;
+  /* margin-top: 70px; */
+  margin-top: 60px;
   padding: 0;
 }
 
@@ -352,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
-#hero h1 {
+#hero h1{
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -360,7 +362,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#hero h1 span {
+#hero h3 {
+  color: #fff;
+}
+
+#hero h3 span {
   border-bottom: 4px solid #3498db;
 }
 
@@ -406,6 +412,62 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.text-slider-items {
+    display: none;
+}
+
+.mouse {
+    width: 25px;
+    height: 45px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -12.5px;
+    border-radius: 12px;
+}
+.mouse:hover {
+    color: #3498db;
+}
+@-webkit-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+@-moz-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+@-o-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+.mouse::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 100%;
+    left: 50%;
+    top:10px;
+    margin-left: -2.5px;
+    transition:all 0.3s ease-in;
+
+     -webkit-animation-name: rotateplane; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: rotateplane;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
