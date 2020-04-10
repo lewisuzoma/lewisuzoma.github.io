@@ -99,13 +99,20 @@
 			</div>
 		<div class="modal-body">
             <div class="form-group">
-              <form id="verifyForm" method="POST">
+              <form method="POST" action="forms/download.php" class="download-email-form" role="form">
                 <div class="form-group">
                   <!----- EMAIL -------------->
-                  <input class="form-control" placeholder="Email Address" id="emailDwnld" name="emailDwnld" type="text" autocomplete="on" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" autocomplete="on" />
+                  <div class="validate"></div>
+
                 </div>
+                <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
                 <div class="form-group">
-                    <button type="button" class="btn btn-success btn-block btn-flat" id="userlogin">Download</button>
+                    <button type="submit" class="btn btn-success btn-block btn-flat" id="userlogin">Download</button>
                 </div>
               </form>
             </div>
@@ -395,7 +402,7 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
+          <p>Interest stuffs built by me.</p>
         </div>
 
         <div class="row">
@@ -694,7 +701,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
+          <p>Will appreciate all contacts. And all will be attended to.</p>
         </div>
 
         <div class="row mt-5 justify-content-center">
@@ -706,19 +713,20 @@
                 <div class="col-lg-4 info">
                   <i class="icofont-google-map"></i>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street<br>New York, NY 535022</p>
+                  <p>Makurdi<br>Benue State, Nigeria</p>
                 </div>
 
                 <div class="col-lg-4 info mt-4 mt-lg-0">
                   <i class="icofont-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@example.com<br>contact@example.com</p>
+                  <p>boblewisu@gmail.com<br>
+                  </p>
                 </div>
 
                 <div class="col-lg-4 info mt-4 mt-lg-0">
                   <i class="icofont-phone"></i>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+                  <p>+234 802 542 3743<br>+234 814 859 1503</p>
                 </div>
               </div>
             </div>

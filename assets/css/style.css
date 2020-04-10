@@ -268,10 +268,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 .my-resume-li :active {
-  background-color: #d4af37;
+  background-color: #3498db;
   box-shadow: 0 9px #384046;
   transform: translateY(4px);
   border-radius: 5px;
+  color:#fff;
 }
 
 @media (max-width: 1366px) {
@@ -1099,6 +1100,11 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
+
+/*--------------------------------------------------------------
+# Resume Download
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # Contact
