@@ -189,4 +189,13 @@
   // Initiate the wowjs animation library
   new WOW().init();
 
+  // Preloader
+  $(window).on('load', function () {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function () {
+        $(this).remove();
+      });
+    }
+  });
+
 })(jQuery);
