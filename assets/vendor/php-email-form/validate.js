@@ -110,7 +110,8 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
       success: function(msg) {
-        if (msg == 'OK') {
+        //if (msg == 'OK') {
+          if (msg) {
           this_form.find('.loading').slideUp();
           this_form.find('.sent-message').slideDown();
           this_form.find("input:not(input[type=submit]), textarea").val('');
@@ -197,11 +198,12 @@ jQuery(document).ready(function($) {
     this_form.find('.loading').slideDown();
 
     $.ajax({
-      type: "GET",
+      type: "POST",
       url: action,
       data: str,
       success: function(msg) {
-        if (msg == 'OK') {
+        //if (msg == 'OK') {
+          if (msg) {
           this_form.find('.loading').slideUp();
           this_form.find('.sent-message').slideDown();
           this_form.find("input:not(input[type=submit]), textarea").val('');
