@@ -59,7 +59,7 @@ if($mail->send()){
 	echo 'OK';
 }
 else {
-	echo "Download failed.";
+	echo "Download failed. Try again";
 }
 
 } catch (Exception $e) {
