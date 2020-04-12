@@ -3,7 +3,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__.'/composer/vendor/autoload.php';
+require '../composer/vendor/autoload.php';
 require '../lib/class.lib.php';
 
 $receiving_email_address = 'boblewisu@gmail.com';
