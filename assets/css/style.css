@@ -1104,6 +1104,11 @@ section {
 /*--------------------------------------------------------------
 # Resume Download
 --------------------------------------------------------------*/
+#my-resume  {
+  top: 100px;
+  z-index: 9999;
+}
+
 #my-resume .download-email-form .validate {
   display: none;
   color: red;
