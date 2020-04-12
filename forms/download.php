@@ -49,7 +49,7 @@ $mail->SMTPOptions = array(
   )
 );
 
-$emailBody = "<b>" .$_POST['email']. "</b><br><b>User Ip</b> " . long2ip($user->getIp()). "<br><b>Browser</b> " .$user->getbrowser(). "<br><b>Download time</b> " .$user->server_time(). "";
+$emailBody = "<b>" .$_GET['email']. "</b><br><b>User Ip</b> " . long2ip($user->getIp()). "<br><b>Browser</b> " .$user->getbrowser(). "<br><b>Download time</b> " .$user->server_time(). "";
 
 $mail->isHTML(true);
 
