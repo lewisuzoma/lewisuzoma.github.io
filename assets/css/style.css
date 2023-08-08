@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: cursive;
+    font-family: 'lato', sans-serif;;
 }
 a {
     text-decoration: none;
@@ -46,12 +46,37 @@ a {
     margin: 0 4px !important;
 }
 
+#teams {
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  #teams td, #teams th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #teams tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #teams tr:hover {background-color: #ddd;}
+  
+  #teams th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3498db;
+    color: white;
+  }
+
 /* Theme */
 .text-white {
     color: #fff !important;
 }
 .text-dark {
     color: #1f1e1e !important;
+}
+.text-primary {
+    color: #3498db !important;
 }
 .font-bold {
     font-weight: bold !important;
