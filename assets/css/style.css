@@ -104,6 +104,9 @@ a {
 .justify-content-center {
     justify-content: center !important;
 }
+.justify-content-start {
+    justify-content: flex-start !important;
+}
 .flex-column {
     flex-direction: column !important;
 }
